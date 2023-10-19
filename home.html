@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Login</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- REMIX ICON -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="./css/home.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-logo">
+        <h1>Notes.ID</h1>
+        <input type="text" placeholder="Search" />
+      </div>
+
+      <nav class="navbar">
+        <img id="img_url" src="" />
+        <div id="username"></div>
+        <button onclick="onLogout()">Log Out</button>
+      </nav>
+    </header>
+
+    <main class="main">
+      <h1 class="main-title">My Notes</h1>
+      <div class="wrapper">
+        <div class="row">
+          <h1 id="notestitle"></h1>
+          <button>Edit</button>
+          <button>Delete</button>
+          <p id="notes"></p>
+          <p class="date" id="date"></p>
+        </div>
+
+        <div class="row">
+          <h1 id="notestitle2"></h1>
+          <button>Edit</button>
+          <button>Delete</button>
+          <p id="notes2"></p>
+          <p class="date" id="date"></p>
+        </div>
+      </div>
+
+      <div class="notes">
+        <p>MAAF MAS JIKA ADA TOMBOL YANG BELUM FUNGSI KARENA SAYA MASIH BINGUNG FETCHING API JADI PAKAI LOCAL DATA.JS SEPERTI TUTORIAL MAS RIZAL</p>
+        <p>TERIMA KASIH</p>
+      </div>
+    </main>
+
+    <script src="./js/home.js"></script>
+  </body>
+</html>
